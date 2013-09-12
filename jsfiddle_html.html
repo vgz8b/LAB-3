@@ -1,0 +1,22 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+    
+<body onload="initialize()">
+
+    <div id="control">
+        <h5><center><i>Get Directions</i></center></h5>
+        
+        
+        <hr/>
+        <strong>Start:</strong>
+          <input type="text" name="start" id="start" value=""/>
+      <strong>End:</strong>
+     <input type="text" name="end" id="end" value=""/>
+        <input type="submit" id="submit" value="submit" onclick="calcRoute();"/>   
+       
+    </div>
+    
+    <div id="map-canvas" style="height:500px;width:100%;"></div>
+<div id="directions-panel"></div>  
+    <div id="temp"></div>   
+  </body>
